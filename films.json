@@ -1,0 +1,66 @@
+[
+  {
+    "Title": "The Terminator",
+    "Director": "James Cameron",
+    "Genre": "Action, Sci-Fi",
+    "Description": "The robot kills everybody...",
+    "Sessions": [
+      {
+        "Hall": 1,
+        "Time": "2023-04-26T10:00:00"
+      },
+      {
+        "Hall": 2,
+        "Time": "2023-04-26T13:00:00"
+      },
+      {
+        "Hall": 3,
+        "Time": "2023-04-26T18:00:00"
+      },
+      {
+        "Hall": 1,
+        "Time": "2023-04-26T22:00:00"
+      }
+    ]
+  },
+  {
+    "Title": "John Wick: Chapter 4",
+    "Director": "Chad Stahelski",
+    "Genre": "Action, Crime, Thriller",
+    "Description": "Some description...",
+    "Sessions": [
+      {
+        "Hall": 1,
+        "Time": "2023-05-01T11:00:00"
+      },
+      {
+        "Hall": 2,
+        "Time": "2023-05-01T16:00:00"
+      },
+      {
+        "Hall": 5,
+        "Time": "2023-05-01T20:00:00"
+      }
+    ]
+  },
+  {
+    "Title": "Ghosted",
+    "Director": "Dexter Fletcher",
+    "Genre": "Action, Adventure, Comedy",
+    "Description": "This film is not about ghosts...",
+    "Sessions": [
+      {
+        "Hall": 7,
+        "Time": "2023-05-03T12:00:00"
+      },
+      {
+        "Hall": 3,
+        "Time": "2023-05-03T14:00:00"
+      },
+      {
+        "Hall": 2,
+        "Time": "2023-05-03T23:00:00"
+      }
+    ]
+  }
+]

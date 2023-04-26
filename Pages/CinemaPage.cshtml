@@ -1,0 +1,22 @@
+﻿@page
+@model Cinema.Pages.CinemaPageModel
+@{
+    ViewData["Title"] = "Session Page";
+}
+
+<div class="filmContainer">
+
+    @foreach(var f in Model.Db!.GetFilms()!)
+    {
+        <div class="film">
+            <h5>@f.Title</h5>
+            <p>@f.Director</p>
+            <p>@f.Genre</p>
+            <p>@f.Description</p>
+            @foreach(var s in @f.Sessions!)
+            {
+                <p>Hall @s.Hall - @s.Time.ToShortTimeString()</p>
+            }
+        </div>
+    }
+</div>
