@@ -16,12 +16,12 @@
         <div class="sessionContainer">
             <p>
                 Session
-                <input type="text" name="hall" placeholder="Hall" required />
-                <input type="text" name="year" placeholder="Year" />
-                <input type="text" name="month" placeholder="Month" />
-                <input type="text" name="day" placeholder="Day" />
-                <input type="text" name="hour" placeholder="Hour" required />
-                <input type="text" name="minute" placeholder="Minute" />
+                <input type="number" name="hall" placeholder="Hall" required />
+                <input type="number" name="year" placeholder="Year" />
+                <input type="number" name="month" placeholder="Month" />
+                <input type="number" name="day" placeholder="Day" />
+                <input type="number" name="hour" placeholder="Hour" required />
+                <input type="number" name="minute" placeholder="Minute" />
             </p>
         </div>     
     </div>
@@ -36,24 +36,24 @@
     function addSession() {
         let p = document.createElement("p");
         p.innerHTML += `<p>Session
-                    <input type="text" name="hall" placeholder="Hall" required/>
-                    <input type="text" name="year" placeholder="Year" />
-                    <input type="text" name="month" placeholder="Month" />
-                    <input type="text" name="day" placeholder="Day" />
-                    <input type="text" name="hour" placeholder="Hour" required/>
-                    <input type="text" name="minute" placeholder="Minute" />
+                        <input type="number" name="hall" placeholder="Hall" required/>
+                        <input type="number" name="year" placeholder="Year" />
+                        <input type="number" name="month" placeholder="Month" />
+                        <input type="number" name="day" placeholder="Day" />
+                        <input type="number" name="hour" placeholder="Hour" required/>
+                        <input type="number" name="minute" placeholder="Minute" />
                     </p>`;
         document.querySelector(".sessionContainer").appendChild(p);      
     }
     function resetForm() {
         document.querySelector("#inputId").value = "";
         document.querySelector(".sessionContainer").innerHTML = `<p>Session
-                        <input type="text" name="hall" placeholder="Hall" required/>
-                        <input type="text" name="year" placeholder="Year" />
-                        <input type="text" name="month" placeholder="Month" />
-                        <input type="text" name="day" placeholder="Day" />
-                        <input type="text" name="hour" placeholder="Hour" required/>
-                        <input type="text" name="minute" placeholder="Minute" />
+                            <input type="number" name="hall" placeholder="Hall" required/>
+                            <input type="number" name="year" placeholder="Year" />
+                            <input type="number" name="month" placeholder="Month" />
+                            <input type="number" name="day" placeholder="Day" />
+                            <input type="number" name="hour" placeholder="Hour" required/>
+                            <input type="number" name="minute" placeholder="Minute" />
                         </p>`;
     }
 </script>
