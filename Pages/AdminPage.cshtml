@@ -9,7 +9,7 @@
 
     <div class="inputContainer">
         <p>IMDBid
-            <input type="text" name="id" required pattern="tt(\d{8}|\d{7})" placeholder="ttxxxxxxx" />
+            <input id="inputId" type="text" name="id" required pattern="tt(\d{8}|\d{7})" placeholder="ttxxxxxxx" />
             <a href="https://moviesearchfreeimdbdatabase.on.drv.tw/www.my-site.com/">You can find id here (in details)</a>
         </p>
         <br>
@@ -26,14 +26,14 @@
         </div>     
     </div>
     <div class="buttonContainer">
-        <input type="reset" value="Reset" />
+        <button onclick="resetForm()">Reset</button>
         <button onclick="addSession()">Add session</button>
         <input type="submit" value="Done" />
     </div>
 </form>
 
 <script>
-    function addSession(){
+    function addSession() {
         let p = document.createElement("p");
         p.innerHTML += `<p>Session
                     <input type="text" name="hall" placeholder="Hall" required/>
@@ -43,7 +43,18 @@
                     <input type="text" name="hour" placeholder="Hour" required/>
                     <input type="text" name="minute" placeholder="Minute" />
                     </p>`;
-        document.querySelector(".sessionContainer").appendChild(p);
+        document.querySelector(".sessionContainer").appendChild(p);      
+    }
+    function resetForm() {
+        document.querySelector("#inputId").value = "";
+        document.querySelector(".sessionContainer").innerHTML = `<p>Session
+                        <input type="text" name="hall" placeholder="Hall" required/>
+                        <input type="text" name="year" placeholder="Year" />
+                        <input type="text" name="month" placeholder="Month" />
+                        <input type="text" name="day" placeholder="Day" />
+                        <input type="text" name="hour" placeholder="Hour" required/>
+                        <input type="text" name="minute" placeholder="Minute" />
+                        </p>`;
     }
 </script>
 
