@@ -22,8 +22,11 @@ body {
     margin: 0 auto;
     border: 1px dotted;
     border-color: burlywood;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .film {
+    flex-basis: 25%;
     margin: 20px;
 }

@@ -1,0 +1,46 @@
+﻿@page
+@using Microsoft.AspNetCore.Html;
+@model Cinema.Pages.AdminPageModel
+@{
+    ViewData["Title"] = "Admin mode";
+}
+
+<form class="adminContainer" method="get">
+
+    <div class="inputContainer">
+        <p>IMDBid
+            <input type="text" name="id" required pattern="tt\d{7}" placeholder="ttxxxxxxx" />
+        </p>
+        <br>
+        <p>
+            Session
+            <input type="text" name="hall" placeholder="Hall" required />
+            <input type="text" name="year" placeholder="Year" />
+            <input type="text" name="month" placeholder="Month" />
+            <input type="text" name="day" placeholder="Day" />
+            <input type="text" name="hour" placeholder="Hour" required/>
+            <input type="text" name="minute" placeholder="Minute" />
+        </p>
+    </div>
+
+    <div class="buttonContainer">
+        <button onclick="addSession()">Add session</button>
+        <input type="submit" value="Done"/>
+    </div>
+
+</form>
+
+
+<script>
+    function addSession(){
+        document.querySelector(".inputContainer").innerHTML += `<p>Session
+                    <input type="text" name="hall" placeholder="Hall" required/>
+                    <input type="text" name="year" placeholder="Year" />
+                    <input type="text" name="month" placeholder="Month" />
+                    <input type="text" name="day" placeholder="Day" />
+                    <input type="text" name="hour" placeholder="Hour" required/>
+                    <input type="text" name="minute" placeholder="Minute" />
+                    </p>`;
+    }
+</script>
+
