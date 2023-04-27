@@ -54,13 +54,17 @@ namespace Cinema.Pages
                         int.Parse(Request.Form["hour"][i]))
                         );
                     }
-                    else
+                    else if (correctMinute)
                     {
                         sessions.Add(new Session(
                             int.Parse(Request.Form["hall"][i]),
                             int.Parse(Request.Form["hour"][i]),
                             int.Parse(Request.Form["minute"][i]))
                             );
+                    }
+                    else
+                    {
+                        continue;
                     }
                 }
                 await Db!.AddFilm(id, sessions.ToArray());
