@@ -30,3 +30,8 @@ body {
     flex-basis: 25%;
     margin: 20px;
 }
+
+button {
+    border: 1px solid;
+    border-radius:2px;
+}
