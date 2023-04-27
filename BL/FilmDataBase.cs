@@ -15,11 +15,36 @@ namespace Cinema.BL
 
         public async Task AddFilm(string imdbId, Session[] sessions)
         {
-            var newFilm = await _db?.CreateNewFilmAsync(imdbId, sessions)!;
+            var newFilm = await CreateNewFilmAsync(imdbId, sessions)!;
             if (newFilm is not null)
             {
                 _db?.AddNewFilm(newFilm);
                 _films!.Add(newFilm);
+            }
+        }
+
+        public async Task<Film?> CreateNewFilmAsync(string imdbId, Session[] sessions)
+        {
+            var filmInfo = await FilmApi.GetInfoById(imdbId);
+
+            if (filmInfo is not null)
+            {
+                var newFilm = new Film()
+                {
+                    ImdbId = imdbId,
+                    Poster = filmInfo.Poster,
+                    Title = filmInfo.Title,
+                    Director = filmInfo.Director,
+                    Genre = filmInfo.Genre,
+                    Description = filmInfo.Plot,
+                    Sessions = sessions
+                };
+
+                return newFilm;
+            }
+            else
+            {
+                return null;
             }
         }
 

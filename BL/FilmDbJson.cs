@@ -13,31 +13,6 @@ namespace Cinema.BL
             File.WriteAllText("films.json", file);
         }
 
-        public async Task<Film?> CreateNewFilmAsync(string imdbId, Session[] sessions)
-        {
-            var filmInfo = await FilmApi.GetInfoById(imdbId);
-
-            if (filmInfo is not null)
-            {
-                var newFilm = new Film()
-                {
-                    ImdbId = imdbId,
-                    Poster = filmInfo.Poster,
-                    Title = filmInfo.Title,
-                    Director = filmInfo.Director,
-                    Genre = filmInfo.Genre,
-                    Description = filmInfo.Plot,
-                    Sessions = sessions
-                };
-
-                return newFilm;
-            }
-            else
-            {
-                return null;
-            }
-        }
-
         public IEnumerable<Film> GetAllFilms()
         {
             var file = File.ReadAllText("films.json");
