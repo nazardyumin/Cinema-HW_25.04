@@ -6,6 +6,6 @@ namespace Cinema.BL
     {
         public void AddNewFilm(Film newFilm);
         public Task<Film?> CreateNewFilmAsync(string imdbId, Session[] sessions);
-        public IEnumerable<Film> GetAllFilms();     
+        public IEnumerable<Film> GetAllFilms();
     }
 }

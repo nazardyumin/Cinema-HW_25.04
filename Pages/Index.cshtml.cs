@@ -13,8 +13,8 @@ namespace Cinema.Pages
 
         public void OnGet()
         {
-            
+
         }
-        
+
     }
 }

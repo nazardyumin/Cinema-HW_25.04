@@ -11,7 +11,7 @@ namespace Cinema.BL
             var newDb = oldDb.Append(newFilm);
             var file = JsonSerializer.Serialize(newDb);
             File.WriteAllText("films.json", file);
-        }   
+        }
 
         public async Task<Film?> CreateNewFilmAsync(string imdbId, Session[] sessions)
         {
@@ -35,7 +35,7 @@ namespace Cinema.BL
             else
             {
                 return null;
-            }      
+            }
         }
 
         public IEnumerable<Film> GetAllFilms()

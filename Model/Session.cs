@@ -14,7 +14,7 @@
             Time = new DateTime(now.Year, now.Month, now.Day, hour, minute, 0);
         }
 
-        public Session(int hall, int year, int month, int day, int hour, int minute = 0) 
+        public Session(int hall, int year, int month, int day, int hour, int minute = 0)
         {
             Hall = hall;
             Time = new DateTime(year, month, day, hour, minute, 0);
