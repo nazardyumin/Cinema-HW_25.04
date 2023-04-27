@@ -13,23 +13,29 @@ namespace Cinema.BL
             File.WriteAllText("films.json", file);
         }   
 
-        public Film CreateNewFilm(string[] film, (int, DateTime)[] sessions)
+        public async Task<Film?> CreateNewFilmAsync(string imdbId, Session[] sessions)
         {
-            var newFilm = new Film()
-            {
-                Title = film[0],
-                Director = film[1],
-                Genre = film[2],
-                Description = film[3],
-                Sessions = new Session[sessions.Length]
-            };
+            var filmInfo = await FilmApi.GetInfoById(imdbId);
 
-            for (var i = 0; i < sessions.Length; i++)
+            if (filmInfo is not null)
             {
-                newFilm.Sessions[i] = new Session() { Hall = sessions[i].Item1, Time = sessions[i].Item2 };
+                var newFilm = new Film()
+                {
+                    ImdbId = imdbId,
+                    Poster = filmInfo.Poster,
+                    Title = filmInfo.Title,
+                    Director = filmInfo.Director,
+                    Genre = filmInfo.Genre,
+                    Description = filmInfo.Plot,
+                    Sessions = sessions
+                };
+
+                return newFilm;
             }
-
-            return newFilm;
+            else
+            {
+                return null;
+            }      
         }
 
         public IEnumerable<Film> GetAllFilms()

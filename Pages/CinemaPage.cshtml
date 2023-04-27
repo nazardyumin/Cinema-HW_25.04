@@ -9,6 +9,7 @@
     @foreach(var f in Model.Db!.GetFilms()!)
     {
         <div class="film">
+            <img src="@f.Poster">
             <h5>@f.Title</h5>
             <p>@f.Director</p>
             <p>@f.Genre</p>

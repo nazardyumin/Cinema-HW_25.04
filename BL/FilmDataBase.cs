@@ -13,11 +13,14 @@ namespace Cinema.BL
             _films = new List<Film>(_db.GetAllFilms());
         }
 
-        public void AddFilm(string[] film, (int, DateTime)[] sessions)
+        public async Task AddFilm(string imdbId, Session[] sessions)
         {
-            var newFilm = _db?.CreateNewFilm(film, sessions);
-            _db?.AddNewFilm(newFilm!);
-            _films!.Add(newFilm!);
+            var newFilm = await _db?.CreateNewFilmAsync(imdbId, sessions)!;
+            if (newFilm is not null) 
+            {
+                _db?.AddNewFilm(newFilm);
+                _films!.Add(newFilm);
+            }    
         }
 
         public List<Film>? GetFilms()
