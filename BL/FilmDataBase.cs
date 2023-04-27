@@ -23,7 +23,7 @@ namespace Cinema.BL
             }
         }
 
-        public async Task<Film?> CreateNewFilmAsync(string imdbId, Session[] sessions)
+        private async Task<Film?> CreateNewFilmAsync(string imdbId, Session[] sessions)
         {
             var filmInfo = await FilmApi.GetInfoById(imdbId);
 
