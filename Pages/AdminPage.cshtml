@@ -5,11 +5,12 @@
     ViewData["Title"] = "Admin mode";
 }
 
-<form class="adminContainer" method="get">
+<form class="adminContainer" method="post">
 
     <div class="inputContainer">
         <p>IMDBid
-            <input type="text" name="id" required pattern="tt\d{7}" placeholder="ttxxxxxxx" />
+            <input type="text" name="id" required pattern="tt(\d{8}|\d{7})" placeholder="ttxxxxxxx" />
+            <a href="https://moviesearchfreeimdbdatabase.on.drv.tw/www.my-site.com/">You can find id here (in details)</a>
         </p>
         <br>
         <p>
@@ -22,17 +23,16 @@
             <input type="text" name="minute" placeholder="Minute" />
         </p>
     </div>
-
     <div class="buttonContainer">
-        <button onclick="addSession()">Add session</button>
-        <input type="submit" value="Done"/>
+        <input type="reset" value="Reset" />
+        <button onclick="addSession(event)">Add session</button>
+        <input type="submit" value="Done" />
     </div>
-
 </form>
 
-
 <script>
-    function addSession(){
+    function addSession(event){
+        event.preventDefault();
         document.querySelector(".inputContainer").innerHTML += `<p>Session
                     <input type="text" name="hall" placeholder="Hall" required/>
                     <input type="text" name="year" placeholder="Year" />
