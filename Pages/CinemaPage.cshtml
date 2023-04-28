@@ -14,9 +14,12 @@
             <p>@f.Director</p>
             <p>@f.Genre</p>
             <p>@f.Description</p>
-            @foreach(var s in @f.Sessions!)
+            @if (@f.Sessions is not null)
             {
-                <p>Hall @s.Hall - @s.Time.ToShortTimeString()</p>
+                @foreach (var s in @f.Sessions)
+                {
+                    <p>Hall @s.Hall - @s.Time.ToShortTimeString()</p>
+                } 
             }
         </div>
     }

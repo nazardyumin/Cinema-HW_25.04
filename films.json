@@ -1,1 +1,148 @@
-[{"ImdbId":"tt0088247","Poster":"https://m.media-amazon.com/images/M/MV5BYTViNzMxZjEtZGEwNy00MDNiLWIzNGQtZDY2MjQ1OWViZjFmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg","Title":"The Terminator","Director":"James Cameron","Genre":"Action, Sci-Fi","Description":"A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity\u0027s future salvat...","Sessions":[{"Hall":1,"Time":"2023-04-27T13:00:00"},{"Hall":4,"Time":"2023-04-27T18:00:00"},{"Hall":2,"Time":"2023-04-27T23:00:00"}]},{"ImdbId":"tt15326988","Poster":"https://m.media-amazon.com/images/M/MV5BNGMzYWZlYmYtNTcyMC00ZGVjLThjN2ItMjY4MjkwN2NlMjYwXkEyXkFqcGdeQXVyOTU0NjY1MDM@._V1_SX300.jpg","Title":"Ghosted","Director":"Dexter Fletcher","Genre":"Action, Adventure, Comedy","Description":"Cole falls head over heels for enigmatic Sadie, but then makes the shocking discovery that she\u0027s a secret agent. Before they can decide on a second date, Cole and Sadie are swept away on an international adventure to save the world.","Sessions":[{"Hall":3,"Time":"2023-04-27T11:00:00"},{"Hall":8,"Time":"2023-04-27T14:00:00"},{"Hall":1,"Time":"2023-04-27T20:00:00"},{"Hall":2,"Time":"2023-04-27T23:00:00"}]},{"ImdbId":"tt10366206","Poster":"https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_SX300.jpg","Title":"John Wick: Chapter 4","Director":"Chad Stahelski","Genre":"Action, Crime, Thriller","Description":"John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.","Sessions":[{"Hall":4,"Time":"2023-04-27T14:00:00"},{"Hall":5,"Time":"2023-04-27T16:00:00"},{"Hall":9,"Time":"2023-04-27T19:00:00"}]},{"ImdbId":"tt6450804","Poster":"https://m.media-amazon.com/images/M/MV5BNzhlYjE5MjMtZDJmYy00MGZmLTgwN2MtZGM0NTk2ZTczNmU5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg","Title":"Terminator: Dark Fate","Director":"Tim Miller","Genre":"Action, Adventure, Sci-Fi","Description":"An augmented human and Sarah Connor must stop an advanced liquid Terminator from hunting down a young girl, whose fate is critical to the human race.","Sessions":[{"Hall":2,"Time":"2023-04-27T18:45:00"}]},{"ImdbId":"tt14812496","Poster":"https://m.media-amazon.com/images/M/MV5BMmNmOTM0ZGItNGY3YS00Y2JiLWE3NDEtMDMzYWU4YzgyOGJlXkEyXkFqcGdeQXVyNDM1ODc2NzE@._V1_SX300.jpg","Title":"Vyzov","Director":"Klim Shipenko","Genre":"Drama","Description":"Follows a female surgeon who has to perform an operation on a cosmonaut too ill to return to Earth immediately.","Sessions":[{"Hall":2,"Time":"2023-04-27T10:00:00"},{"Hall":7,"Time":"2023-04-27T17:30:00"},{"Hall":1,"Time":"2023-04-27T21:45:00"}]},{"ImdbId":"tt23789808","Poster":"https://m.media-amazon.com/images/M/MV5BOWViOWQyZjktOTZhZC00MDg0LWJkYTYtYTBmNWVmMjhiZWQzXkEyXkFqcGdeQXVyNDM1ODc2NzE@._V1_SX300.jpg","Title":"Poyekhavshaya","Director":"Anton Maslov","Genre":"Comedy, Drama, Romance","Description":"After a series of troubles, Anya Smolina decides to completely change her life. She takes out a dusty bicycle, puts her dachshund Kapa in the trailer and goes to Magadan to put up with her mother, with whom they have not communica...","Sessions":[{"Hall":2,"Time":"2023-04-27T15:30:00"},{"Hall":7,"Time":"2023-04-27T18:00:00"}]}]
+[
+  {
+    "FilmId": 0,
+    "ImdbId": "tt0088247",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYTViNzMxZjEtZGEwNy00MDNiLWIzNGQtZDY2MjQ1OWViZjFmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    "Title": "The Terminator",
+    "Director": "James Cameron",
+    "Genre": "Action, Sci-Fi",
+    "Description": "A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity\u0027s future salvat...",
+    "Sessions": [
+      {
+        "SessionId": 0,
+        "Hall": 1,
+        "Time": "2023-04-27T13:00:00"
+      },
+      {
+        "SessionId": 0,
+        "Hall": 4,
+        "Time": "2023-04-27T18:00:00"
+      },
+      {
+        "SessionId": 0,
+        "Hall": 2,
+        "Time": "2023-04-27T23:00:00"
+      }
+    ]
+  },
+  {
+    "FilmId": 0,
+    "ImdbId": "tt15326988",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNGMzYWZlYmYtNTcyMC00ZGVjLThjN2ItMjY4MjkwN2NlMjYwXkEyXkFqcGdeQXVyOTU0NjY1MDM@._V1_SX300.jpg",
+    "Title": "Ghosted",
+    "Director": "Dexter Fletcher",
+    "Genre": "Action, Adventure, Comedy",
+    "Description": "Cole falls head over heels for enigmatic Sadie, but then makes the shocking discovery that she\u0027s a secret agent. Before they can decide on a second date, Cole and Sadie are swept away on an international adventure to save the world.",
+    "Sessions": [
+      {
+        "SessionId": 0,
+        "Hall": 3,
+        "Time": "2023-04-27T11:00:00"
+      },
+      {
+        "SessionId": 0,
+        "Hall": 8,
+        "Time": "2023-04-27T14:00:00"
+      },
+      {
+        "SessionId": 0,
+        "Hall": 1,
+        "Time": "2023-04-27T20:00:00"
+      },
+      {
+        "SessionId": 0,
+        "Hall": 2,
+        "Time": "2023-04-27T23:00:00"
+      }
+    ]
+  },
+  {
+    "FilmId": 0,
+    "ImdbId": "tt10366206",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_SX300.jpg",
+    "Title": "John Wick: Chapter 4",
+    "Director": "Chad Stahelski",
+    "Genre": "Action, Crime, Thriller",
+    "Description": "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
+    "Sessions": [
+      {
+        "SessionId": 0,
+        "Hall": 4,
+        "Time": "2023-04-27T14:00:00"
+      },
+      {
+        "SessionId": 0,
+        "Hall": 5,
+        "Time": "2023-04-27T16:00:00"
+      },
+      {
+        "SessionId": 0,
+        "Hall": 9,
+        "Time": "2023-04-27T19:00:00"
+      }
+    ]
+  },
+  {
+    "FilmId": 0,
+    "ImdbId": "tt6450804",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNzhlYjE5MjMtZDJmYy00MGZmLTgwN2MtZGM0NTk2ZTczNmU5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "Title": "Terminator: Dark Fate",
+    "Director": "Tim Miller",
+    "Genre": "Action, Adventure, Sci-Fi",
+    "Description": "An augmented human and Sarah Connor must stop an advanced liquid Terminator from hunting down a young girl, whose fate is critical to the human race.",
+    "Sessions": [
+      {
+        "SessionId": 0,
+        "Hall": 2,
+        "Time": "2023-04-27T18:45:00"
+      }
+    ]
+  },
+  {
+    "FilmId": 0,
+    "ImdbId": "tt14812496",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMmNmOTM0ZGItNGY3YS00Y2JiLWE3NDEtMDMzYWU4YzgyOGJlXkEyXkFqcGdeQXVyNDM1ODc2NzE@._V1_SX300.jpg",
+    "Title": "Vyzov",
+    "Director": "Klim Shipenko",
+    "Genre": "Drama",
+    "Description": "Follows a female surgeon who has to perform an operation on a cosmonaut too ill to return to Earth immediately.",
+    "Sessions": [
+      {
+        "SessionId": 0,
+        "Hall": 2,
+        "Time": "2023-04-27T10:00:00"
+      },
+      {
+        "SessionId": 0,
+        "Hall": 7,
+        "Time": "2023-04-27T17:30:00"
+      },
+      {
+        "SessionId": 0,
+        "Hall": 1,
+        "Time": "2023-04-27T21:45:00"
+      }
+    ]
+  },
+  {
+    "FilmId": 0,
+    "ImdbId": "tt23789808",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BOWViOWQyZjktOTZhZC00MDg0LWJkYTYtYTBmNWVmMjhiZWQzXkEyXkFqcGdeQXVyNDM1ODc2NzE@._V1_SX300.jpg",
+    "Title": "Poyekhavshaya",
+    "Director": "Anton Maslov",
+    "Genre": "Comedy, Drama, Romance",
+    "Description": "After a series of troubles, Anya Smolina decides to completely change her life. She takes out a dusty bicycle, puts her dachshund Kapa in the trailer and goes to Magadan to put up with her mother, with whom they have not communica...",
+    "Sessions": [
+      {
+        "SessionId": 0,
+        "Hall": 2,
+        "Time": "2023-04-27T15:30:00"
+      },
+      {
+        "SessionId": 0,
+        "Hall": 7,
+        "Time": "2023-04-27T18:00:00"
+      }
+    ]
+  }
+]

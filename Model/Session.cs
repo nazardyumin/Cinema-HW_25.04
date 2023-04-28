@@ -2,6 +2,7 @@
 {
     public class Session
     {
+        public int SessionId { get; set; }
         public int Hall { get; set; }
         public DateTime Time { get; set; }
 

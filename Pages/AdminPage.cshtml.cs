@@ -8,9 +8,10 @@ namespace Cinema.Pages
     {
         public FilmDataBase? Db { get; set; }
 
-        public AdminPageModel()
+        public AdminPageModel(SqliteDbContext db)
         {
-            Db = new(new FilmDbJson());
+            //Db = new(new FilmDbJson());
+            Db = new(new FilmDbSqlite(db));
         }
 
         public async Task OnPost()
@@ -31,35 +32,35 @@ namespace Cinema.Pages
                     if (correctYear && correctMonth && correctDay && correctMinute)
                     {
                         sessions.Add(new Session(
-                            int.Parse(Request.Form["hall"][i]),
-                            int.Parse(Request.Form["year"][i]),
-                            int.Parse(Request.Form["month"][i]),
-                            int.Parse(Request.Form["day"][i]),
-                            int.Parse(Request.Form["hour"][i]),
-                            int.Parse(Request.Form["minute"][i])));
+                            int.Parse(Request.Form["hall"][i]!),
+                            int.Parse(Request.Form["year"][i]!),
+                            int.Parse(Request.Form["month"][i]!),
+                            int.Parse(Request.Form["day"][i]!),
+                            int.Parse(Request.Form["hour"][i]!),
+                            int.Parse(Request.Form["minute"][i]!)));
                     }
                     else if (correctYear && correctMonth && correctDay && !correctMinute)
                     {
                         sessions.Add(new Session(
-                            int.Parse(Request.Form["hall"][i]),
-                            int.Parse(Request.Form["year"][i]),
-                            int.Parse(Request.Form["month"][i]),
-                            int.Parse(Request.Form["day"][i]),
-                            int.Parse(Request.Form["hour"][i])));
+                            int.Parse(Request.Form["hall"][i]!),
+                            int.Parse(Request.Form["year"][i]!),
+                            int.Parse(Request.Form["month"][i]!),
+                            int.Parse(Request.Form["day"][i]!),
+                            int.Parse(Request.Form["hour"][i]!)));
                     }
                     else if (!correctMinute && !correctYear)
                     {
                         sessions.Add(new Session(
-                        int.Parse(Request.Form["hall"][i]),
-                        int.Parse(Request.Form["hour"][i]))
+                        int.Parse(Request.Form["hall"][i]!),
+                        int.Parse(Request.Form["hour"][i]!))
                         );
                     }
                     else if (correctMinute)
                     {
                         sessions.Add(new Session(
-                            int.Parse(Request.Form["hall"][i]),
-                            int.Parse(Request.Form["hour"][i]),
-                            int.Parse(Request.Form["minute"][i]))
+                            int.Parse(Request.Form["hall"][i]!),
+                            int.Parse(Request.Form["hour"][i]!),
+                            int.Parse(Request.Form["minute"][i]!))
                             );
                     }
                     else
@@ -67,7 +68,7 @@ namespace Cinema.Pages
                         continue;
                     }
                 }
-                await Db!.AddFilm(id, sessions.ToArray());
+                await Db!.AddFilm(id!, sessions.ToArray());
             }
         }
     }

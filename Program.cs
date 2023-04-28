@@ -1,4 +1,11 @@
+using Cinema.BL;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+string connection = builder.Configuration.GetConnectionString("Sqlite")!;
+
+builder.Services.AddDbContext<SqliteDbContext>(options => options.UseSqlite(connection));
 
 // Add services to the container.
 builder.Services.AddRazorPages();

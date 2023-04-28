@@ -7,9 +7,10 @@ namespace Cinema.Pages
     {
         public FilmDataBase? Db { get; set; }
 
-        public CinemaPageModel()
+        public CinemaPageModel(SqliteDbContext db)
         {
-            Db = new(new FilmDbJson());
+            //Db = new(new FilmDbJson());
+            Db = new(new FilmDbSqlite(db));
         }
     }
 }
